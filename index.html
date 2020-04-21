@@ -7,9 +7,9 @@
   <script src="app.js"></script>
 </head>
 
-<body>
+<body >
   <h1>Tic Tac Toe</h1>
-  <table id="main" style="width:100%", border="1" >
+  <table id="main" style="width:50%; table-layout: fixed;" border="1" >
     <tr>
       <th id="r1c1" height="100" onclick="clickEventListener(id)"></th>
       <th id="r1c2" height="100" onclick="clickEventListener(id)"></th>
@@ -26,6 +26,9 @@
       <th id="r3c3" height="100" onclick="clickEventListener(id)"></th>
     </tr>
   </table>
+  <div id="button" style="display: none; padding-top: 10px;">
+    <button id="btn" onClick="window.location.reload();">Play Again</button>
+  </div>
 </body>
 
 </html>
